@@ -24,14 +24,16 @@ WP Admin > Static HTML > Processing
 
 Rewrite Links in source code:
 
-> wp-content/,content/
-> content/themes/,contents/ui/
-> content/ui/_mytheme_/,content/ui/
-> wp-includes/,inc/
+```
+wp-content/,content/
+content/themes/,contents/ui/
+content/ui/_mytheme_/,content/ui/
+wp-includes/,inc/```
 
 Rename Exported Directories:
 
-> wp-content,content
-> content/themes,content/ui
-> content/ui/_mytheme_,content/ui
-> wp-includes/,inc/
+```
+wp-content,content
+content/themes,content/ui
+content/ui/_mytheme_,content/ui
+wp-includes/,inc/```
