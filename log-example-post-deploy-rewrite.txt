@@ -1,0 +1,280 @@
+REWRITE FROM: Array
+(
+    [0] => wp-content/
+    [1] => content/themes/
+    [3] => wp-includes/
+)
+
+REWRITE TO: Array
+(
+    [0] => content/
+    [1] => content/ui/
+    [3] => inc/
+)
+
+POST: Array
+(
+    [selected_deployment_option] => s3
+    [baseUrl] => https://stage.mydomain.com
+    [baseUrl-s3] => https://stage.mydomain.com
+    [s3Key] => AKIBTMRL7QMWQKYKYZ7U
+    [s3Secret] => ***REDACTED***
+    [s3Region] => us-east-1
+    [s3Bucket] => stage.mydomain.com
+    [cfDistributionId] => E7WJCACY0EN0R
+    [crawl_delay] => 0
+    [rewrite_rules] => wp-content/,content/
+content/themes/,content/ui/
+wp-includes/,inc/
+https://stage.mydomain.com/,/
+    [rename_rules] => wp-content,content
+content/themes,content/ui
+wp-includes/,inc/
+    [removeConditionalHeadComments] => 1
+    [removeWPMeta] => 1
+    [removeWPLinks] => 1
+    [removeHTMLComments] => 1
+    [crawl_increment] => 5
+    [deployBatchSize] => 1
+    [delayBetweenAPICalls] => 0
+    [_wpnonce] => 80a1007f9a
+    [_wp_http_referer] => /wp-admin/admin.php?page=statichtmloutput
+    [action] => wp_static_html_output_ajax
+    [wp_site_url] => http://stage-mydomain.wpmultidomain.com/
+    [wp_uploads_path] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3
+    [wp_uploads_url] => http://stage-mydomain.wpmultidomain.com/wp-content/uploads/sites/3
+    [wp_site_path] => /opt/bitnami/apps/wordpress/htdocs/
+    [wp_inc] => /wp-includes
+    [wp_active_theme] => https://stage-mydomain.wpmultidomain.com/wp-content/themes/fotografie
+    [wp_uploads] => /wp-content/uploads/sites/3
+    [nonce] => 0a6407c207
+    [ajax_action] => finalize_deployment
+)
+
+FILES PROCESSED: Array
+(
+    [0] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/index.html
+    [1] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/robots.txt
+    [2] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/2020/index.html
+    [3] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/feed/index.html
+    [4] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/sample-page/index.html
+    [5] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/wp-admin/index.html
+    [6] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/2020/07/index.html
+    [7] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/author/user/index.html
+    [8] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/category/uncategorized/index.html
+    [9] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/comments/feed/index.html
+    [10] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/sample-page/feed/index.html
+    [11] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/2020/07/15/index.html
+    [12] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/author/user/feed/index.html
+    [13] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/category/uncategorized/feed/index.html
+    [14] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/2020/07/15/hello-world/index.html
+    [15] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/2020/07/15/hello-world/feed/index.html
+)
+
+STATIC HTML OUTPUT $active object: StaticHTMLOutput\Archive Object
+(
+    [name] => static-html-output
+    [path] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3/static-html-output/
+    [settings] => Array
+        (
+            [baseUrl] => https://stage.mydomain.com
+            [selected_deployment_option] => s3
+            [wp_site_url] => http://stage-mydomain.wpmultidomain.com/
+            [wp_site_path] => /opt/bitnami/apps/wordpress/htdocs/
+            [wp_uploads_path] => /opt/bitnami/apps/wordpress/htdocs/wp-content/uploads/sites/3
+            [wp_uploads_url] => http://stage-mydomain.wpmultidomain.com/wp-content/uploads/sites/3
+            [wp_active_theme] => https://stage-mydomain.wpmultidomain.com/wp-content/themes/fotografie
+            [wp_uploads] => /wp-content/uploads/sites/3
+            [wp_inc] => /wp-includes
+            [crawl_increment] => 5
+        )
+
+)
+
+INDEX.HTML CONTENT: 
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Stage MyDomain Apps &ndash; Just another Network site</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Stage MyDomain Apps &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Stage MyDomain Apps &raquo; Comments Feed" href="/comments/feed/">
+<link rel="stylesheet" id="wp-block-library-css" href="/inc/css/dist/block-library/style.min.css?ver=5.4.2" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="/inc/css/dist/block-library/theme.min.css?ver=5.4.2" type="text/css" media="all">
+<link rel="stylesheet" id="fotografie-style-css" href="/content/ui/fotografie/style.css?ver=5.4.2" type="text/css" media="all">
+<link rel="stylesheet" id="cleanfotografie-style-css" href="/content/ui/clean-fotografie/style.css?ver=5.4.2" type="text/css" media="all">
+<link rel="stylesheet" id="fotografie-fonts-css" href="https://fonts.googleapis.com/css?family=Raleway%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CSource+Serif+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="/content/ui/fotografie/assets/css/font-awesome.css?ver=4.7.0" type="text/css" media="all">
+<link rel="stylesheet" id="fotografie-block-style-css" href="/content/ui/fotografie/assets/css/blocks.css?ver=1.0" type="text/css" media="all">
+<script type="text/javascript" src="/inc/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+<script type="text/javascript" src="/inc/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+
+<body class="home blog wp-embed-responsive has-header-image fluid-layout hfeed boxed-layout no-sidebar">
+
+
+<div id="page" class="site">
+	<div class="site-inner">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header" role="banner">
+
+				<div class="custom-header">
+		<div class="custom-header-media">
+			<div id="wp-custom-header" class="wp-custom-header"><img src="/content/ui/clean-fotografie/assets/images/header.jpg" width="1920" height="1080" alt="Stage MyDomain Apps"></div>
+						<div class="custom-header-content section header-media-section">
+				<div class="custom-header-content-wrapper">
+											<h2 class="entry-title section-title">Header Media</h2>
+					
+					<p class="site-header-text">This is Header Media Text.
+					<span class="header-button"><a href="#" target="_self" class="button">Explore<span class="screen-reader-text">Header Media</span></a></span>
+				</p></div>
+			</div>
+				</div>
+	</div>
+
+			<div class="site-header-main">
+				<div class="wrapper">
+
+					
+	<div class="site-branding">
+				<div id="site-details">
+							<h1 class="site-title"><a href="/" rel="home">Stage MyDomain Apps</a></h1>
+						<h2 class="site-description">Just another Network site</h2>
+		</div>
+	</div>
+
+						<div class="menu-toggle-wrapper">
+		<button id="menu-toggle" class="menu-toggle" aria-controls="top-menu" aria-expanded="false"><span class="menu-label">Menu</span></button>
+	</div>
+	<div id="site-header-menu" class="site-header-menu">
+		
+			<nav id="site-navigation" class="main-navigation default-page-menu" role="navigation" aria-label="Primary Menu">
+				<div class="primary-menu-container"><ul id="menu-primary-items" class="menu nav-menu"><li class="page_item page-item-2"><a href="/sample-page/">Sample Page</a></li></ul></div>
+		
+			</nav>
+
+		<div class="mobile-social-search">
+			<nav id="social-navigation" class="social-navigation" role="navigation" aria-label="Social Links Menu" aria-expanded="false">
+				<button id="search-toggle" class="toggle-top"><span class="search-label screen-reader-text">Search</span></button>
+
+				<div id="header-search-container" class="search-container">
+
+<form role="search" method="get" class="search-form" action="/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+
+		<input type="search" class="search-field" placeholder="Enter keyword&hellip;" value="" name="s">
+	</label>
+
+	<button type="submit" class="search-submit"><span class="search-button-text">Search</span></button>
+</form>
+</div>
+
+							</nav>
+		</div>
+
+	</div>
+
+				</div>
+			</div>
+
+		</header>
+
+		<div id="site-content-wrapper" class="site-content-contain">
+
+			
+			
+			
+			
+			<div id="content" class="site-content">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+							<header class="blog-section-headline">
+					<div class="page-title-wrapper">
+						<h2 class="page-title">News</h2>
+					</div>
+				</header>
+			
+			<div id="infinite-post-wrap" class="post-archive">
+
+								
+					
+<article id="post-1 post-1" class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
+
+	
+	<div class="post-thumbnail" style="background-image: url( '/content/ui/fotografie/assets/images/no-thumb.jpg' )">
+		<a class="cover-link" href="/2020/07/15/hello-world/"></a>
+	</div>
+
+
+	<div class="entry-container content-right">
+		<div class="post-wrapper">
+			<header class="entry-header">
+									
+	<div class="entry-meta category-date-meta">
+				<span class="posted-on"><span class="screen-reader-text">Posted on</span> <a href="/2020/07/15/hello-world/" rel="bookmark"><time class="entry-date published updated" datetime="2020-07-15T07:45:03+00:00">July 15, 2020</time></a></span>	</div>
+								<h2 class="entry-title"><a href="/2020/07/15/hello-world/" rel="bookmark">Hello world!</a></h2>			</header>
+
+			<div class="entry-summary">
+				<p>Welcome to Network. This is your first post. Edit or delete it, then start writing!</p>
+			</div>
+
+							
+	<footer class="entry-footer entry-meta">
+		<span class="byline"><span class="screen-reader-text">by </span><span class="author vcard"><a class="url fn n" href="/author/user/">user</a></span></span>		<span class="comments-link"><a href="/2020/07/15/hello-world/#comments">1 Comment</a></span>			</footer>
+					</div>
+	</div>
+</article>
+
+				
+			</div>
+
+					</main>
+	</div>
+
+
+			</div>
+
+			
+
+			
+
+			<footer id="colophon" class="site-footer" role="contentinfo">
+
+				
+
+				<div id="site-generator">
+					<div class="wrapper">
+						<div class="site-info">
+	Copyright &copy; 2020 <a href="/">Stage MyDomain Apps</a>. All Rights Reserved.  | Clean Fotografie&nbsp;by&nbsp;<a target="_blank" href="https://catchthemes.com/">Catch Themes</a></div>
+
+
+					</div>
+				</div>
+
+			</footer>
+		</div>
+	</div>
+</div>
+<a href="#masthead" id="scrollup" class="backtotop"><span class="screen-reader-text">Scroll Up</span></a><script type="text/javascript" src="/content/ui/clean-fotografie/assets/js/global.min.js?ver=1.0"></script>
+<script type="text/javascript" src="/content/ui/fotografie/assets/js/skip-link-focus-fix.min.js?ver=20170616"></script>
+<script type="text/javascript" src="/content/ui/fotografie/assets/js/jquery.matchHeight.min.js?ver=20151215"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var fotografieScreenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/content/ui/fotografie/assets/js/custom-scripts.min.js?ver=20170616"></script>
+
+</body>
+</html>
