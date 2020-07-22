@@ -28,7 +28,8 @@ Rewrite Links in source code:
 wp-content/,content/
 content/themes/,contents/ui/
 content/ui/_mytheme_/,content/ui/
-wp-includes/,inc/```
+wp-includes/,inc/
+```
 
 Rename Exported Directories:
 
@@ -36,4 +37,5 @@ Rename Exported Directories:
 wp-content,content
 content/themes,content/ui
 content/ui/_mytheme_,content/ui
-wp-includes/,inc/```
+wp-includes/,inc/
+```
