@@ -23,7 +23,6 @@ View logs at:
 WP Admin > Static HTML > Processing
 
 Rewrite Links in source code:
-
 ```
 wp-content/,content/
 content/themes/,contents/ui/
@@ -32,7 +31,6 @@ wp-includes/,inc/
 ```
 
 Rename Exported Directories:
-
 ```
 wp-content,content
 content/themes,content/ui
